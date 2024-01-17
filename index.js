@@ -4,7 +4,7 @@ import fs from "fs";
 const urls = [
   //'https://www.ubereats.com/za/store/woolworths-foodstop-edenburg/J7RJGeJ9STSYJYNjWfVIzA?diningMode=PICKUP&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjM2JTIwRmFybWVyJ3MlMjBGb2xseSUyMFN0JTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSmQ4dFRXNjFobFI0Ukp5N09fR1lTTW8wJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS0yNS43NTQ2NTc1JTJDJTIybG9uZ2l0dWRlJTIyJTNBMjguMjUxNjM0NCU3RA%3D%3D',
   //'https://www.ubereats.com/za/store/woolworths-foodstop-bryanston/3_H8sVnGSc-4vqSDAVbDdg?diningMode=PICKUP',
-  //'https://www.ubereats.com/za/store/woolworths-food-stop-rivonia/naE_J7aVTYiWAllzeYVi3w?diningMode=PICKUP'
+  'https://www.ubereats.com/za/store/woolworths-food-stop-rivonia/naE_J7aVTYiWAllzeYVi3w?diningMode=PICKUP'
 ]
 
 
