@@ -4,7 +4,7 @@ import fs from "fs";
 const urls = [
   //'https://www.ubereats.com/za/store/woolworths-foodstop-edenburg/J7RJGeJ9STSYJYNjWfVIzA?diningMode=PICKUP&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjM2JTIwRmFybWVyJ3MlMjBGb2xseSUyMFN0JTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSmQ4dFRXNjFobFI0Ukp5N09fR1lTTW8wJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS0yNS43NTQ2NTc1JTJDJTIybG9uZ2l0dWRlJTIyJTNBMjguMjUxNjM0NCU3RA%3D%3D',
   //'https://www.ubereats.com/za/store/woolworths-foodstop-bryanston/3_H8sVnGSc-4vqSDAVbDdg?diningMode=PICKUP',
-  'https://www.ubereats.com/za/store/woolworths-food-stop-rivonia/naE_J7aVTYiWAllzeYVi3w?diningMode=PICKUP'
+  //'https://www.ubereats.com/za/store/woolworths-food-stop-rivonia/naE_J7aVTYiWAllzeYVi3w?diningMode=PICKUP'
 ]
 
 
@@ -47,6 +47,7 @@ const load = async (url) => {
 
   // check to see if we can pull the list of buttons from the left navigation bar. The parent element type has nav and the role="navigation".
   let nav = await page.waitForSelector('nav[role="navigation"]');
+
   // nav children are divs, which have a button child, which has a div child. Get the inner child
   let navElements = Array.from(Object.values(await nav.$$('div > button > div')));
 
@@ -64,7 +65,6 @@ const load = async (url) => {
       const getItemsFromPage = async () => {
         try {
           // get all the divs which are child items of div[data-testid^="store-menu-item"]
-
           let storeMenuItems = await page.$$('div[data-testid^="store-menu-item"]');
 
           for (const menuItems of storeMenuItems) {
@@ -133,6 +133,8 @@ const processUrls = async () => {
   console.log('processing', url);
 
   await load(url);
+
+  // wait 2 seconds before loading the next url
   await wait(2000);
   processUrls();
 }
