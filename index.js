@@ -5,7 +5,7 @@ const urls = [
   //'https://www.ubereats.com/za/store/woolworths-foodstop-edenburg/J7RJGeJ9STSYJYNjWfVIzA?diningMode=PICKUP&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjM2JTIwRmFybWVyJ3MlMjBGb2xseSUyMFN0JTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSmQ4dFRXNjFobFI0Ukp5N09fR1lTTW8wJTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS0yNS43NTQ2NTc1JTJDJTIybG9uZ2l0dWRlJTIyJTNBMjguMjUxNjM0NCU3RA%3D%3D',
   //'https://www.ubereats.com/za/store/woolworths-foodstop-bryanston/3_H8sVnGSc-4vqSDAVbDdg?diningMode=PICKUP',
   //'https://www.ubereats.com/za/store/woolworths-food-stop-rivonia/naE_J7aVTYiWAllzeYVi3w?diningMode=PICKUP'
-  'https://www.ubereats.com/za/store/woolworths-foodstop-ballito/0ofCFNcfWIGUU8n7NrgaBw/d287c214-d71f-5881-9453-c9fb36b81a07?diningMode=DELIVERY'
+  'https://www.ubereats.com/za/store/woolworths-foodstop-ballito/0ofCFNcfWIGUU8n7NrgaBw?diningMode=DELIVERY'
 ]
 
 
